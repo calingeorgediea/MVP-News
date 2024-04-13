@@ -9,6 +9,14 @@ numpy = "*"
 matplotlib = "*"
 scikit-learn = "*"
 jupyterlab = "*"
+pip = "*"
+install = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+stopwords = "*"
+nltk = "*"
+tensorflow = "*"
 
 [dev-packages]
 
