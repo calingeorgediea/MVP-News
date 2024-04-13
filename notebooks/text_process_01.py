@@ -33,7 +33,7 @@ def preprocess_text(text):
     return tokens
 
 def tokenize_text_from_csv(csv_file):
-    df = pd.read_csv(csv_file, usecols=['_id', 'category', 'datePublished', 'content', 'title'], nrows=10)  # Read only the first 10 rows
+    df = pd.read_csv(csv_file, usecols=['_id', 'category', 'datePublished', 'content'], nrows=10)  # Read only the first 10 rows
     tokenized_data = []
     
     for index, row in df.iterrows():
