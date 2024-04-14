@@ -55,6 +55,9 @@ train_lda:
 		fi \
 	done
 	@echo "Processing complete."
+	
+combine_topics:
+	python ./src/data/combine_topics.py ./output
 
 
 # Target to run tests (if any)
