@@ -37,7 +37,7 @@ process_files:
 
 normalize_results_from_spark:
 	@echo "Normalizing results from Spark..."
-	@for dir in ./data/processed/categories/*; do \
+	@for dir in ./data/interim/categories/*; do \
 		if [ -d "$$dir" ]; then \
 			echo "Processing $$dir..."; \
 			output_file="$$dir/merged.csv"; \

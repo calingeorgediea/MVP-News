@@ -1,14 +1,13 @@
 import os
 import sys
 import spacy
-import gensim
 from gensim import corpora, models
 from spacy.lang.ro.stop_words import STOP_WORDS
 import pandas as pd
-
+nlp = spacy.load("ro_core_news_lg")
 def text_pipeline(data_file, num_topics=10, passes=15):
     # Load the spaCy model for Romanian
-    nlp = spacy.load("ro_core_news_sm")
+    
 
     # Load your text data from CSV
     texts = pd.read_csv(data_file)
