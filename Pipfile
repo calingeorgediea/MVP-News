@@ -17,6 +17,8 @@ torchaudio = "*"
 stopwords = "*"
 nltk = "*"
 tensorflow = "*"
+gensim = "*"
+scipy = "==1.10.1"
 
 [dev-packages]
 
