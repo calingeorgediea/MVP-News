@@ -13,10 +13,10 @@ getdata:
 	python ./src/data/get_data.py
 
 move_csv:
-	mv mongodb_data.csv ./data/raw/
+	mv news.csv ./data/raw/
 
 separate_data:
-	python ./src/data/separate_datas.py
+	python ./src/data/separate_data.py
 
 process_data:
 	python ./src/data/app_process_data.py ./data/raw/categories ./data/interim/categories
